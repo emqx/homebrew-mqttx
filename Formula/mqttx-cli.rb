@@ -7,6 +7,6 @@ class MqttxCli < Formula
   version "1.8.2"
 
   def install
-    bin.install "mqttx"
+    bin.install "mqttx-cli"
   end
 end
