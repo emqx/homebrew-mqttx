@@ -1,10 +1,10 @@
 class MqttxCli < Formula
   desc "MQTT 5.0 and MQTT X CLI client"
   homepage "https://mqttx.app"
-  url "https://github.com/emqx/MQTTX/releases/download/v1.10.1/mqttx-cli.tar.gz"
-  sha256 "113c09fdc35da4f2945d63ba42f0814cf7ec0ecb7e8f8d45d8dd0055b7745663"
+  url "https://github.com/emqx/MQTTX/releases/download/v1.11.0/mqttx-cli.tar.gz"
+  sha256 "52a09cf7bed32918abb041fec7e205f73f5bd2d8ff8daefa155e26f620f127e6"
   license "Apache-2.0"
-  version "1.10.1"
+  version "1.11.0"
 
   def install
     bin.install "mqttx"
