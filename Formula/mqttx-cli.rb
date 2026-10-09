@@ -1,7 +1,6 @@
 class MqttxCli < Formula
   desc "MQTT 5.0 and MQTT X CLI client"
   homepage "https://mqttx.app"
-  version "1.13.1"
   license "Apache-2.0"
   revision 1
 
@@ -21,7 +20,6 @@ class MqttxCli < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/mqttx --version")
-    assert_includes shell_output("/usr/bin/lipo -archs #{bin}/mqttx").split,
-                    Hardware::CPU.arm? ? "arm64" : "x86_64"
+    assert_equal [Hardware::CPU.arch], (bin/"mqttx").archs
   end
 end
