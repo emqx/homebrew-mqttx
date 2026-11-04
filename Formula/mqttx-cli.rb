@@ -6,11 +6,11 @@ class MqttxCli < Formula
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/emqx/MQTTX/releases/download/v1.13.2/mqttx-cli-macos-arm64.tar.gz"
-    sha256 "cc5b161f6bf90e61a0cab45bcc88ec15689bc8ebb9cd3a2b6bb1df486572b198"
+    url "https://github.com/emqx/MQTTX/releases/download/v1.13.3/mqttx-cli-macos-arm64.tar.gz"
+    sha256 "eeadf3b057c434fc408f4e446e5178d267f05fe5e0bb74c5e38e8a7d05e5d47a"
   else
-    url "https://github.com/emqx/MQTTX/releases/download/v1.13.2/mqttx-cli-macos-x64.tar.gz"
-    sha256 "7e45a9361b8cb6cbe23cc0181519df535122a38fe8b4ec02e500a8869cb4886e"
+    url "https://github.com/emqx/MQTTX/releases/download/v1.13.3/mqttx-cli-macos-x64.tar.gz"
+    sha256 "c63a3dbed37defc9c71a1bfe0196f0b4cf9881bdfeba12b335233e8638dd99e2"
   end
 
   def install
